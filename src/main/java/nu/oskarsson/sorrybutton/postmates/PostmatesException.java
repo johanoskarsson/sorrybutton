@@ -1,6 +1,6 @@
 package nu.oskarsson.sorrybutton.postmates;
 
-public class PostmatesException extends Exception {
+public class PostmatesException extends RuntimeException {
 
   public PostmatesException(Throwable cause) {
     super(cause);

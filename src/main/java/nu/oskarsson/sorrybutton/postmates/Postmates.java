@@ -4,7 +4,6 @@ import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
-import com.mashape.unirest.http.utils.Base64Coder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,7 +20,7 @@ public class Postmates {
     this.apiKey = apiKey;
   }
 
-  public void deliver(Delivery delivery) throws PostmatesException {
+  public String deliver(Delivery delivery) throws PostmatesException {
     logger.info("Scheduling delivery for {}", delivery);
     try {
       HttpResponse<JsonNode> response =
@@ -39,6 +38,7 @@ public class Postmates {
 
       String status = json.getObject().getString("status");
       logger.info("Delivery status {}", status);
+      return status;
     } catch (UnirestException e) {
       throw new PostmatesException(e);
     }
