@@ -1,0 +1,17 @@
+# please rename to sorrybutton.yaml and fill out
+pagerduty:
+  instance: "yourproject"
+  apitoken: "yourtoken"
+  policyid: "yourpolicy"
+
+postmates:
+  apikey: "yourapikey"
+  customer_id: "yourcustomerid"
+  manifest: "A dozen red roses"
+  pickup_name: "Farmgirl flowers"
+  pickup_address: "901 16th St, San Francisco, CA 94107"
+  pickup_phone_number: "(855) 202-3817"
+  pickup_business_name:
+  dropoff_address: "1355 Market St"
+  dropoff_phone_number: "(415) 222-9670"
+  dropoff_business_name: "Twitter Inc"
