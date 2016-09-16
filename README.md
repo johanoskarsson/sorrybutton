@@ -9,8 +9,7 @@ sends a postmate to fetch them flowers (or anything else you specify).
 Generate a PagerDuty API key
 https://support.pagerduty.com/hc/en-us/articles/202829310-Generating-an-API-Key
 
-Pick an escalation policy that the button will pick the on call user from. Click on it, copy the id from the url
-to the configuration file.
+Pick an escalation policy that the button will pick the on call user from. Click on it, save the id from the url.
 
 https://sorrybutton.pagerduty.com/escalation_policies
 
